@@ -11,16 +11,6 @@ module Slideable
        possible_moves.concat(grow_unblocked_moves_dir(move[0], move[1]))
      end
      possible_moves
-
-
-    # moves = []
-    # 7.times do |i|
-    #   moves << grow_unblocked_moves_dir(i, i)
-    # end
-    # moves.map! do |move|
-    #   [move.first + @pos.first, move[1] + @pos[1]]
-    # end
-    # moves
   end
 
   private
@@ -55,25 +45,6 @@ module Slideable
     true
   end
 
-
-
-
-  #   moves = []
-  #   if move_dirs[:horizontal]
-  #     horizontal_dirs.each do |pos|
-  #       unless @board[pos].color == self.color
-  #         moves << pos
-  #       end
-  #     end
-  #   end
-  #   if move_dirs[:diagonal]
-  #     moves << diagonal_dirs
-  #   end
-  #
-  #   moves.map! do |move|
-  #     [move.first * dx, move[1] * dy]
-  #   end
-  # end
 
   def move_dirs
   end
